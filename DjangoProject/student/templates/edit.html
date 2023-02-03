@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        </title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+
+        </head>
+        <body>
+            
+            <div class="container">
+                <form method="POST"action="/update/{{student.id}}">
+                {% csrf_token %}
+                <div class="form-group">
+                        <label><b>Name:</b></label>
+                      <input type="text" name="name" class ="form-control" value="{{student.name}}">
+                    </div>
+
+                    <div class="form-group">
+                        <label><b>Department:</b></label>
+                        <input type="text" name="department" class ="form-control" value="{{student.department}}">
+                    </div>
+                    
+                    <div class="form-group">
+                       <label><b>Email:</b></label>
+                       <input type="text" name="email" class ="form-control" value="{{student.email}}">
+
+                    </div>
+                    
+                    <!-- <button class="btn btn-dark btn-sm mt-4 ">Submit</button> -->
+
+ 
+                <input type="submit" name="update" value="update" class="btn btn-success">
+               </form>
+            </div>
+            </body>
+             </html>
+                

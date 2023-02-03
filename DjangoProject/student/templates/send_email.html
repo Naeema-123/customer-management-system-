@@ -1,0 +1,23 @@
+<!-- <form method="post">
+    {% csrf_token %}
+    <input type="text" name="subject" placeholder="Subject">
+    <textarea name="message" placeholder="Message"></textarea>
+    <input type="email" name="email_from" placeholder="Your email">
+    <input type="email" name="email_to" placeholder="Recipient's email">
+    <button type="submit">Send</button>
+</form> -->
+
+<html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mail</title>
+</head>
+<body>
+    <p>Student Name : {{ $student['name'] }}</p>
+    <p>Department : {{ $student['department'] }}</p>
+    <p>Email : {{ $student['email'] }}</p>
+   <p>Thank You</p>
+</body>
+</html>
